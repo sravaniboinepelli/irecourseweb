@@ -3,7 +3,18 @@
 		<header>
 			<h2>What I Do</h2>
 		</header>
-		<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+		<h2>Baseline Methodologies tried along with the datasets used:</h2>
+		<h3>Datasets used:</h3>
+		<p>We scraped instagram pages via users and hashtags for posts, comments and number of likes per post.  We chose our users based on how relevant and rich their content was in order to train our model better.  We chose the hashtags to scrape based on how popular they were and how often they were used in different aspects of life(social or otherwise) such as sports, news, fashion, art, nature, style, food, animals, travel etc. We currently have a total of 16558 user based posts and 10335 tag based posts. However, the tag based posts do not have the number of likes included in the data and can only be used for training the baseline or for classification purposes.</p>
+
+
+		<h3>Methodologies tried:</h3>
+		<ol>
+			<li>The State-of-the-art model uses Sequence 2 Sequence with Bi-attention mechanism network which takes posts as well as conversations as data and its corresponding hashtags as true label.</li>
+			<li>We have also referred other networks such as mentioned in  Topic-Aware Neural Keyphrase Generation for Social Media Language which include unsupervised LDA Topic modeling. However since training LDA performed poorly with small datasets, we decided to go with the Supervised model.</li>
+			<li>We also found that LDA performance is poor in comparison to the existing model according to the evaluation matrix provided in the papers (links to the papers were provided in the Scope Document)</li>
+		</ol>
+
 	</div>
 	<a href="#two" class="button style2 down anchored">Next</a>
 </section>
