@@ -1,14 +1,15 @@
 # Site settings
 url: https://lufevida.github.io
 baseurl: /html5up-big-picture
-title: Big Picture
-author: HTML5 UP
+title: Context-Aware Hashtag Generation
+# author: HTML5 UP
 
 # Intro Section
-introTitle: Intro
+introTitle: Abstract
 introGreeting: Context-Aware Hashtag Generation
-sectionOneTitle: What I Do
-sectionTwoTitle: Who I Am
-sectionThreeTitle: My Work
+sectionOneTitle: Methodology
+sectionTwoTitle: Architecture
+sectionThreeTitle: Challenges
+sectionFourTitle: Video?
 
 # Contact information
