@@ -1,9 +1,21 @@
 <section id="two" class="main style2 left dark fullscreen">
 	<div class="content box style2">
-		<header>
-			<h2>Who I Am</h2>
-		</header>
-		<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+		<h2>Architecture (Must contain proper explanation and diagram of your approach):</h2>
+		<h3>Preprocessing:</h3>
+		<ol>
+			<li>Removed noisy data like emoticons and non-ASCII data and single character hashtags</li>
+			<li>Replaced numbers, URLs, tagged users etc with corresponding tags (DIGIT,  MENTION, URL etc).</li>
+			<li>Segregate by tag, post and comments for overall context</li>
+			<li>Handling multiple hashtags: post 1 h1 con1, post 1 h2 con2 etc etc (each hashtag should correspond to the same post)</li>
+		</ol>
+
+		<h3>Model:</h3>
+		<p>Actual model description</p>
+		<ol>
+			<li>Splitting hashtag for better context and accuracy using the Viterbi algorithm</li>
+			<li>Incorporating likes, cosine similarity for ranking relevant hashtags, the loss function we came up with (more importance given to context generated hashtag than likes)</li>
+		</ol>
+		<h3>Diagram of our architecture:</h3>
 	</div>
 	<a href="#work" class="button style2 down anchored">Next</a>
 </section>
