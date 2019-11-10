@@ -1,10 +1,20 @@
-<section id="work" class="main style3 primary">
+<section id="work" class="main style3 secondary">
 	<div class="content">
 		<header>
-			<h2>Baseline Methodologies tried along with the datasets used:</h2>
-			<h4>Datasets used:</h4>
-			<p>We scraped instagram pages via users and hashtags for posts, comments and number of likes per post.  We chose our users based on how relevant and rich their content was in order to train our model better.  We chose the hashtags to scrape based on how popular they were and how often they were used in different aspects of life(social or otherwise) such as sports, news, fashion, art, nature, style, food, animals, travel etc. We currently have a total of 16558 user based posts and 10335 tag based posts. However, the tag based posts do not have the number of likes included in the data and can only be used for training the baseline or for classification purposes.</p>
 
+
+ 
+
+
+
+			<h2>Architecture (Must contain proper explanation and diagram of your approach):</h2>
+			<h4>Preprocessing:</h4>
+			<ol>
+				<li>Removed noisy data like emoticons and non-ASCII data and single character hashtags</li>
+				<li>Replaced numbers, URLs, tagged users etc with corresponding tags (DIGIT,  MENTION, URL etc).</li>
+				<li>Segregate by tag, post and comments for overall context</li>
+				<li>Handling multiple hashtags: post 1 h1 con1, post 1 h2 con2 etc etc (each hashtag should correspond to the same post)</li>
+			</ol>
 
 			<h4>Methodologies tried:</h4>
 			<ol>
