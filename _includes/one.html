@@ -6,16 +6,12 @@
 		<h2>Challenges</h2>
 		<ol>
 		<li>Instagram has more number of hashtags and considerably longer post length than twitter and Weibo.</li>
-		<li>Scraping: User based scraping on Instagram is very slow because of the delay added to serve the Limit GQL queries of 20 per 666 seconds. In addition, for public users > 500 posts we encountered lots of blocking delays which maked scraping very slow.</li>
-		<li>Data scarcity on Instagram: </li>
-		<ol>
-			<li>For hashtag based scraping, we are getting posts with minimal text/caption which does not help provide any context.</li>
-			<li>Image, post and hashtag have nearly no relevance/correlation. Hashtag could be related to either the post content or the picture (for example, a picture of the Empire State Building would have the hashtags #nyc #amaze #empirestatebuilding and the post would say something like “had an amazing day!”). Comments are more motivational and supportive (eg. nice pic, love it, etc) whereas twitter comments are more relevant to the post.</li>
-		</ol>
-		<p>In order to deal with this, we decided to train our model on data scraped from popular, public users who generally post with longer text and few decent hashtags from which we can derive better context. </p> 
-		<li>For Incorporating likes into the model we need a dataset that captures the distinction/popularity between two different hashtags given that the context of the post is the same, e.g <br>
-    Post1 : This year’s theme for Felicity is Super Hero’s   #FestofIIITH <br>
-    Post2 : This year’s theme for Felicity is Super Hero’s   #FunatIIITH <br>
+		<li>User based scraping is very slow because of the limit for GQL queries. For users > 500 posts we encountered many blocking delays as well.</li>
+		<li>Data scarcity on Instagram: For hashtag based scraping, we get posts with minimal text which does not help provide any context. Image, post and hashtag have nearly no correlation. The hashtag could be related to either the post content or the picture (for example, a picture of the Empire State Building would have the hashtags #nyc #amaze #empirestatebuilding and the post would say something like “had an amazing day!”). Comments are more motivational and supportive (eg. nice pic, love it, etc) whereas twitter comments are more relevant to the post.
+		<br>In order to deal with this, we decided to train our model on data scraped from popular, public users who generally post with longer text and few decent hashtags from which we can derive better context. </li> 
+		<li>For incorporating likes into the model, we need a dataset that captures the distinction/popularity between two different hashtags given that the context of the post is the same. For example, <br>
+    Post1 : This year’s theme for Felicity is Superheroes #FestofIIITH <br>
+    Post2 : This year’s theme for Felicity is Superheroes #FunatIIITH <br>
     
     As per our knowledge, there is no such available data source to scrape from that would capture this phenomenon and hence, ranking based on this idea is not possible. 
 		</li>
