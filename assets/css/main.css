@@ -1839,7 +1839,7 @@
 				-ms-transform: translateZ(0);
 				transform: translateZ(0);
 				position: relative;
-				width: 50%;
+				width: 35%;
 				margin: 0;
 			}
 
@@ -2097,7 +2097,7 @@
 		background-size: 256px 256px, cover;
 		background-attachment: fixed;
 		background-position: top left, bottom center;
-		background-repeat: repeat;
+		background-repeat: repeat, no-repeat;
 	}
 
 /* One */
