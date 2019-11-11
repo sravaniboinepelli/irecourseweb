@@ -7,8 +7,7 @@
 		<ol>
 		<li>Instagram has more number of hashtags and  longer post length than twitter and Weibo.</li>
 		<li>User based scraping is very slow because of the limit for GQL queries. For users > 500 posts we encountered many blocking delays as well.</li>
-		<li>Data scarcity on Instagram: Posts have minimal text which does not help provide any context. Image, post and hashtag have nearly no correlation. The hashtag could be related to either the post content or the picture. <p>Eg. Picture: Empire State Building; Hashtags: #nyc #amaze #empirestatebuilding; Post: “had an amazing day!”. Comments are more motivational and supportive (eg. nice pic, love it, etc) whereas twitter comments are more relevant to the post. </p>
-		<!-- <br> --><p>In order to deal with this, we decided to train our model on data scraped from users who generally post with longer text and few decent hashtags from which we can derive better context. </p></li> 
+		<li>Data scarcity on Instagram: Posts have minimal text which does not help provide any context. Image, post and hashtag have nearly no correlation. The hashtag could be related to either the post content or the picture. Comments are more motivational and supportive (eg. nice pic, love it, etc) whereas twitter comments are more relevant to the post. In order to deal with this, we decided to train our model on data scraped from users who generally post with longer text and few decent hashtags from which we can derive better context. </li> 
 		<li>Context and likes generated tags are two separate categories and evaluating two separate metrics in one go is not viable. We  assign a higher priority to the context while ranking popularity. </li>
 		<li>For incorporating likes into the model, we need a dataset that captures the distinction/popularity between two different hashtags given that the context of the post is the same. Eg: <br>
     Post1 : The theme for Felicity is Superheroes #FestofIIITH <br>
