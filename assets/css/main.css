@@ -1839,7 +1839,7 @@
 				-ms-transform: translateZ(0);
 				transform: translateZ(0);
 				position: relative;
-				width: 35%;
+				width: 50%;
 				margin: 0;
 			}
 
@@ -1927,7 +1927,7 @@
 		@media screen and (max-width: 1280px) {
 
 			.main.style2 .content {
-				width: 60%;
+				width: 50%;
 			}
 
 		}
