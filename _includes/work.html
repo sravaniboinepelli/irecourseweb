@@ -1,18 +1,19 @@
 <section id="work" class="main style3 primary">
 	<div class="content">
 		<header>
-			<h2>Baseline Methodologies tried along with the datasets used:</h2> 
+			<h2>Baseline Methodologies tried along with the datasets used:</h2> <br>
 
 			<h3>Datasets used:</h3>
-			<p>We scraped instagram pages via users and hashtags for posts, comments and number of likes per post.  We chose our users based on how relevant and rich their content was in order to train our model better.  We chose the hashtags to scrape based on how popular they were by analysing how often they were used. We also tried to scrape a large category of topics in order to get a wider range of topics to train on. Some categories include sports, news, fashion, art, nature, style, food, animals, travel etc. We currently have a total of 16558 user based posts and 10335 tag based posts..</p>
+			<p>We scraped instagram pages via users and hashtags for posts, comments and number of likes per post.  We chose our users based on how relevant and rich their content was in order to train our model better.  We chose the hashtags to scrape based on how popular they were by analysing how often they were used. We also tried to scrape a large category of topics in order to get a wider range of topics to train on. Some categories include news, entertainment, nature, food, animals etc. We currently have a total of 16558 user based posts and 10335 tag based posts. In order to deal with the challenges that come with scarcity of relevant data on instagram, we decided to train our model on data scraped from users who generally post with longer text and few decent hashtags from which we can derive better context. This results in a high avg. length of posts of 64.80.</p>
 			<img src="images/tabledata.jpg" alt="" class="left" />
 
-			<h3>Methodologies tried:</h3>
-			<ol>
-				<li>The State-of-the-art model uses Sequence 2 Sequence with Bi-attention mechanism network which takes posts as well as conversations as data and its corresponding hashtags as true label.</li>
-				<li>We have also referred other networks such as mentioned in  Topic-Aware Neural Keyphrase Generation for Social Media Language which include unsupervised LDA Topic modeling. However since training LDA performed poorly with small datasets, we decided to go with the Supervised model.</li>
-				<li>We also found that LDA performance is poor in comparison to the existing model according to the evaluation matrix provided in the papers (links to the papers were provided in the Scope Document)</li>
-			</ol>
+			<h3>Methodology and Analysis:</h3>
+			<p>The State-of-the-art model uses Sequence 2 Sequence with Bi-attention mechanism network which takes posts as well as conversations as data and its corresponding hashtags as true label.</p>
+			<h3>Evaluation:</h3>
+				<p>For final evaluation popular information retrieval evaluation metrics accuracy and mean average precision (MAP) scores are reported. </p>
+				<ol><li>Accuracy is measured by performing word to word match between predicted results and gold standard human annotated data.This is performed for Top 1, Top 5, Top 10 and  Top 15 hashtags.</li>
+				<li>Mean Average Precision is a measure of results which takes consideration of ranking of hashtags.</li>
+				</ol>		
 
 		</header>
 	</div>
