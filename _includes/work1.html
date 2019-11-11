@@ -3,7 +3,7 @@
 	<div class="content">
 		<header>
 
-			<h2>Architecture of the Model:</h2> 
+			<h2>The Model - What set us aside from the SOTA:</h2> 
 			<div style="text-align: left;">
 				<h3>Preprocessing:</h3>
 				<ol>
@@ -12,17 +12,18 @@
 					<li>Segregate by tag, post and comments for overall context</li>
 					<li>Handling multiple hashtags: post 1 h1 con1, post 1 h2 con2 etc etc (each hashtag should correspond to the same post)</li>
 					<li>For training instances tagged with multiple gold-standard hashtags, we copy the instances multiple times, each with one gold standard hashtag following.</li>
-					<li>Splitting hashtag for better context and accuracy using the ekphrasis which uses Viterbi algorithm</li>
+					<li>Splitting hashtag for better context and accuracy using the  Viterbi algorithm</li>
 				</ol>
 			</div>
 
 			<div style="text-align: left;">
-				<h3>Methodologies tried:</h3>
+				<h3>Incorporating likes:</h3>
 			</div>
 			<div style="text-align: left;">
 				<ol>
-					<li>The State-of-the-art model uses Sequence 2 Sequence with Bi-attention mechanism network which takes posts as well as conversations as data and its corresponding hashtags as true label.</li>
-					<li>We tried clustering and categorizing the generated hashtags to further incorporate ranking by doing topic modelling as well but training the LDA performed poorly as most of the words were named entities and the size of the post was less resulting in bad accuracy. </li>
+					<li>The hashtags are sorted by topics(through clustering/ manually/topic modelling) and ranked by number of likes.</li>
+					<li>Popularity Ranking Algorithm takes two inputs: The output hashtags from the above model along with the list of hashtags per topic sorted by likes. </li>
+					<li>Since our model predicts unseen hashtags we can only compare topic based hashtags from the training dataset and newly generated hashtags using a similarity metric. We chose the standard cosine_similarity as our metric. More priority is given to the context than to the level of popularity.</li>
 				</ol>
 			</div>
 			<img src="images/architecture_ig.jpg" alt="" />
