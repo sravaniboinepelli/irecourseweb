@@ -9,21 +9,23 @@
 
 
 			<h2>Architecture (Must contain proper explanation and diagram of your approach):</h2> 
-
-			<h3>Preprocessing:</h3>
-			<ol>
-				<li>Removed noisy data like emoticons and non-ASCII data and single character hashtags</li>
-				<li>Replaced numbers, URLs, tagged users etc with corresponding tags (DIGIT,  MENTION, URL etc).</li>
-				<li>Segregate by tag, post and comments for overall context</li>
-				<li>Handling multiple hashtags: post 1 h1 con1, post 1 h2 con2 etc etc (each hashtag should correspond to the same post)</li>
-			</ol>
-
-			<h3>Methodologies tried:</h3>
-			<ol>
-				<li>The State-of-the-art model uses Sequence 2 Sequence with Bi-attention mechanism network which takes posts as well as conversations as data and its corresponding hashtags as true label.</li>
-				<li>We have also referred other networks such as mentioned in  Topic-Aware Neural Keyphrase Generation for Social Media Language which include unsupervised LDA Topic modeling. However since training LDA performed poorly with small datasets, we decided to go with the Supervised model.</li>
-				<li>We also found that LDA performance is poor in comparison to the existing model according to the evaluation matrix provided in the papers (links to the papers were provided in the Scope Document)</li>
-			</ol>
+			<div style="text-align: left;">
+				<h3>Preprocessing:</h3>
+				<ol>
+					<li>Removed noisy data like emoticons and non-ASCII data and single character hashtags</li>
+					<li>Replaced numbers, URLs, tagged users etc with corresponding tags (DIGIT,  MENTION, URL etc).</li>
+					<li>Segregate by tag, post and comments for overall context</li>
+					<li>Handling multiple hashtags: post 1 h1 con1, post 1 h2 con2 etc etc (each hashtag should correspond to the same post)</li>
+				</ol>
+			</div>
+			<div style="text-align: right;">
+				<h3>Methodologies tried:</h3>
+				<ol>
+					<li>The State-of-the-art model uses Sequence 2 Sequence with Bi-attention mechanism network which takes posts as well as conversations as data and its corresponding hashtags as true label.</li>
+					<li>We have also referred other networks such as mentioned in  Topic-Aware Neural Keyphrase Generation for Social Media Language which include unsupervised LDA Topic modeling. However since training LDA performed poorly with small datasets, we decided to go with the Supervised model.</li>
+					<li>We also found that LDA performance is poor in comparison to the existing model according to the evaluation matrix provided in the papers (links to the papers were provided in the Scope Document)</li>
+				</ol>
+			</div>
 			<img src="images/architecture_ig.jpg" alt="" />
 
 		</header>
